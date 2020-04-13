@@ -1,0 +1,343 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+$tra: .4s;
+$darkgreen:#0F6400;
+$green:rgb(22, 136, 2);
+$lggreen:rgb(37, 178, 12);
+$brown:#483b36;
+$gray:#919191;
+$lggray:#f4f2ef;
+$darkgray:#464646;
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// facebook button
+.recommendation {
+    padding: 5px 13px;
+    background-color: #323232;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 11px;
+    background: #1877f2;
+    border: 0;
+    width: fit-content;
+    transition: $tra;
+
+    i {
+        font-size: 14px;
+    }
+
+    &:hover {
+        background-color: #104994;
+    }
+}
+
+// input
+.login-input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+// button
+.enter {
+    padding: 7px 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: $green;
+    border-radius: 4px;
+    transition: $tra;
+
+    &:hover {
+        background-color: #136113;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// register-a
+
+.register {
+    color: $brown;
+    font-size: 14px;
+    margin: 7px 0;
+
+    &:hover {
+        color: $green;
+
+    }
+}
+
+// green line
+.tab-bottom {
+    border-bottom: 1px solid $green;
+}
+
+// register and login pages section
+
+
+.login-section {
+    background-color: $lggray;
+    margin: 20px 0;
+
+    .login-header {
+        width: 100%;
+        background-color: $gray;
+        padding: 7px 0;
+        border-radius: 4px;
+
+        h2 {
+            line-height: 34px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .login-content {
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.login-about {
+    padding: 20px 0;
+
+    h3 {
+        font-size: 14px;
+        color: #727272;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 14px;
+        color: #727272;
+    }
+
+    a {
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+
+// register and login pages section
+
+// pagination  
+.pagination-section {
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+
+            span,
+            a {
+                background-color: transparent;
+                border: 0;
+                padding: 5px 15px;
+                color: $green;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+            }
+
+            &.active {
+                .page-link {
+                    color: $green;
+                    border: 1px solid $green;
+                    background-color: transparent;
+                }
+            }
+
+            .page-link {
+                color: $green;
+            }
+
+        }
+
+        .disabled {
+            span {
+                color: $gray;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// blog section
+.blog-section {
+    background-color: #fff;
+    padding: 30px 15px;
+
+    a,
+    h3 {
+        font-size: 22px;
+        color: #464646;
+        font-weight: bold;
+        padding: 10px 0;
+        display: block;
+    }
+
+    p {
+        font-size: 15px;
+        color: #464646;
+    }
+}
+
+// search price
+
+.search-box {
+    position: relative;
+    width: 150px;
+    z-index: 9999;
+    margin-right: 5px;
+
+    .search-price {
+        height: 35px;
+
+        h6 {
+            font-size: 14px;
+            color: $green;
+        }
+
+        span {
+            font-size: 13px;
+            color: $green;
+        }
+
+        background-color: #fff;
+        padding: 6px 12px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.search-click {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    background-color: #f4f2ef;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    .input-m {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        input {
+            width: 50%;
+            border: none;
+            outline: none;
+            padding: 5px;
+
+            &:first-child() {
+                border-right: 1px solid $lggray;
+            }
+        }
+    }
+}
+
+// select box 
+.select-scroll {
+
+    ul {
+        height: 300px;
+        overflow: auto;
+
+        li {
+            font-size: 13px;
+        }
+    }
+}
+
+// select cache
+
+.search-cache {
+    position: relative;
+
+    .cache-header {
+        color: $green;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    }
+
+    .cache-body {
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        // width: 100px;
+        padding: 25px 40px;
+        display: none;
+
+        .cache-inner-head {
+            display: flex;
+            width: 100%;
+
+            h6 {
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: 0.6px;
+                color: #8a8a8a;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #8a8a8a;
+                font-size: 12px;
+                text-align: right;
+            }
+        }
+    }
+}

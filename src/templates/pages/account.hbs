@@ -1,0 +1,202 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body>
+
+    {{> common/header }}
+
+    <section id="account">
+        <div class="container">
+            <h2>Şəxsi hesab — Express</h2>
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true"> <i class="fas fa-clone"></i> Elanlar</a>
+                    <a class="nav-item nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                        role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                            class="far fa-user"></i>Profil</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active tab-head" id="pills-1" data-toggle="pill" href="#butun-elanlar"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Bütün elanlar (0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-head" id="pills-2" data-toggle="pill" href="#yoxlanishda" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Yoxlanışda (0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-head" id="pills-3" data-toggle="pill" href="#hazirda-saytda"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Hazırda saytda (0)</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link tab-head" id="pills-4" data-toggle="pill" href="#vaxti-bitmis" role="tab"
+                                aria-controls="pills-contact" aria-selected="false">Vaxtı bitmiş (0)</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link tab-head" id="pills-5" data-toggle="pill" href="#qebul-olunmayan"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Qəbul olunmayan (0)</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="butun-elanlar" role="tabpanel"
+                                aria-labelledby="pills-1">
+
+                                <div class="tabe-hader-card  tab-bottom">
+                                    <h3>
+                                        Yoxlanışda
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+
+                                <div class="tabe-hader-card  tab-bottom">
+                                    <h3>
+                                        Hazırda saytda
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                                <div class="tabe-hader-card  tab-bottom">
+                                    <h3>
+                                        Vaxtı bitmiş
+
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                                <div class="tabe-hader-card  tab-bottom">
+                                    <h3>
+                                        Qəbul olunmayan
+
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="yoxlanishda" role="tabpanel" aria-labelledby="pills-2">
+                                <div class="tabe-hader-card">
+                                    <h3>
+                                        Yoxlanışda
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="hazirda-saytda" role="tabpanel" aria-labelledby="pills-3">
+                                <div class="tabe-hader-card ">
+                                    <h3>
+                                        Hazırda saytda
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="vaxti-bitmis" role="tabpanel" aria-labelledby="pills-4">
+                                <div class="tabe-hader-card ">
+                                    <h3>
+                                        Vaxtı bitmiş
+
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="qebul-olunmayan" role="tabpanel" aria-labelledby="pills-5">
+
+                                <div class="tabe-hader-card">
+                                    <h3>
+                                        Qəbul olunmayan
+
+                                    </h3>
+                                    <p>Bu bölmədə elan yoxdur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab">
+                    <div class="profile">
+                        <div class="profile-header tab-bottom">
+                            <h2>
+                                Şəxsi məlumatlar
+                            </h2>
+                        </div>
+                        <div class="profile-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="profile-text-line">
+                                        <p>
+                                            Şirkət:
+                                        </p>
+                                        <p>
+                                            Express
+                                        </p>
+                                    </div>
+                                    <div class="profile-text-line">
+                                        <p>
+                                            Əlaqədar şəxs:
+                                        </p>
+                                        <p>
+                                            Nəzrin
+                                        </p>
+                                    </div>
+                                    <div class="profile-text-line">
+                                        <p>
+                                            E-poçt ünvanı:
+                                        </p>
+                                        <p>
+                                            nezrinsoltanli@gmail.com
+                                        </p>
+                                    </div>
+                                    <div class="profile-text-line">
+                                        <p>
+                                            Telefon:
+                                        </p>
+                                        <p>
+                                            (070) 204-32-20
+                                        </p>
+                                    </div>
+                                         <div class="profile-text-line">
+                                        <p>
+                                            Şifrə:
+                                        </p>
+                                        <p>
+                                            **************  <a href=""> Şifrəni dəyiş</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{> common/footer }}
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+footer{
+    background-color: #464646;
+    padding: 20px 0;
+    .footer-top{
+        border-bottom: 2px solid $gray;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:991.9px){
+            flex-direction: column;
+            align-items: flex-start;
+            a{
+                margin-bottom: 6px;
+            }
+        }
+
+        a{
+            color:#fff;
+            font-weight: 600;
+            transition: $tra;
+            font-size: 14px;
+            &:hover{
+                color:$lggreen;
+            }
+        }
+        .contact{
+            
+                span{
+                    color: #a9acad;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+    
+        }
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 10px;
+            color: #9b9b9b;
+        }
+    }
+}
